@@ -9,7 +9,12 @@ import service.ExpenseService;
 
 @RestController
 @RequestMapping("/api/claims")
-@CrossOrigin(origins = "http://localhost:5173")
+//@CrossOrigin(
+//        origins = "http://localhost:5173",
+//        methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.OPTIONS },
+//        allowedHeaders = "*"
+//)
+
 public class ExpenseController {
 
     private final ExpenseService service;
